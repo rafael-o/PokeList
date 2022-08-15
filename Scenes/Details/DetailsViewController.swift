@@ -52,6 +52,7 @@ extension DetailsViewController: DetailsViewModelDelegate {
     }
     
     func requestFetchDetailsFailure(with error: String) {
+        self.loadingView.stopAnimating()
         self.showErrorModal(error: error, tag: 1)
     }
 }

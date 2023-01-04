@@ -23,7 +23,6 @@ class ListViewController: UIViewController {
     init(viewModel: ListViewModel = .init()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-        self.mainView.delegate = self
         self.viewModel.delegate = self
         setupNavigationBar()
     }
